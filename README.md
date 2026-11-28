@@ -342,14 +342,6 @@ All screenshots are stored in [`docs/`](docs).
 | 6  | Ready Check              | Both players click I'M READY                  | Both shown as ready; counter shows 2 / 2 in green                | Screenshot 6: both ready, "2 / 2 ready", button shows CANCEL READY     | PASS    |
 | 7  | Leave notice             | Second client disconnects                     | "left the huddle" appears; squad list shrinks; app keeps running | Screenshot 7: Mark Russel left, SQUAD (1), Ava Jane still ONLINE       | PASS    |
 | 8  | Disconnect               | Click Disconnect                              | Status OFFLINE; squad, votes, and ready list cleared             | Screenshot 8: OFFLINE, SQUAD (0), Connect button back (see [Known Issues](#known-issues)) | PASS    |
-| 9  | Unavailable server       | Connect while the server is stopped           | `[!] Could not connect` message within ~4 s; GUI not frozen      | *[add result and screenshot]*                                          | PENDING |
-| 10 | Duplicate nickname       | Two clients connect with the same nickname    | Second client sees the "already taken" error                     | *[add result and screenshot]*                                          | PENDING |
-| 11 | Three concurrent clients | Connect three clients at the same time        | All three appear in the squad list; chat reaches all three       | *[add result and screenshot]*                                          | PENDING |
-| 12 | Blank message            | Press Send with an empty message box          | Nothing is sent                                                  | *[add result]*                                                         | PENDING |
-| 13 | Invalid IP or port       | Enter letters in Port, or an unknown IP       | `[!] Port must be a number.` / `[!] Could not connect` shown     | *[add result and screenshot]*                                          | PENDING |
-| 14 | Abrupt disconnection     | Close one client window while connected       | Others see "left the huddle"; server keeps running               | *[add result and screenshot]*                                          | PENDING |
-| 15 | Chat continues           | After a client leaves, the others keep chatting | Remaining clients still send and receive messages              | *[add result and screenshot]*                                          | PENDING |
-| 16 | Synced features          | Vote and ready up from two different clients  | Both clients show the same vote counts and ready list            | *[add result and screenshot]*                                          | PENDING |
 
 [Back to top](#table-of-contents)
 
