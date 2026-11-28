@@ -292,7 +292,6 @@ java -cp target/classes ChatClient          # run once per player
 
 ## Screenshots
 
-All screenshots are stored in [`docs/`](docs).
 
 **1. Server running (NetBeans Output).** Maven builds `Huddle_HQ` (4 source files) and the server prints that it is listening on port 5001.
 
