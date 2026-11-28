@@ -7,10 +7,8 @@ import java.net.*;
 import java.util.*;
 import java.util.List;
 
-/** Huddle HQ - LAN squad hub: chat, map vote, ready check. */
 public class ChatClient extends JFrame {
 
-    // ---- palette ----
     static final Color BG       = new Color(0x15, 0x16, 0x1B);
     static final Color PANEL    = new Color(0x1E, 0x20, 0x27);
     static final Color PANEL_2  = new Color(0x27, 0x2A, 0x33);
@@ -24,14 +22,12 @@ public class ChatClient extends JFrame {
 
     static final String[] MAPS = Protocol.MAPS;
 
-    // ---- connection ----
     private Socket socket;
     private PrintWriter out;
     private boolean connected = false;
     private String myNick = "";
     private String myVote = null;
 
-    // ---- widgets ----
     private final JTextField ipField = field("localhost", 11);
     private final JTextField portField = field(String.valueOf(Protocol.DEFAULT_PORT), 5);
     private final JTextField nickField = field("", 10);
@@ -80,7 +76,6 @@ public class ChatClient extends JFrame {
         showCard("Chat");
     }
 
-    // =====================================================  UI BUILDING
     private JComponent buildHeader() {
         JPanel header = new JPanel(new BorderLayout());
         header.setBackground(PANEL);
@@ -246,7 +241,6 @@ public class ChatClient extends JFrame {
         return p;
     }
 
-    // =====================================================  HELPERS
     private static JTextField field(String text, int cols) {
         JTextField f = new JTextField(text, cols);
         f.setBackground(PANEL);
@@ -314,7 +308,6 @@ public class ChatClient extends JFrame {
         chatArea.setCaretPosition(chatArea.getDocument().getLength());
     }
 
-    // =====================================================  NETWORK
     private void connect() {
         String ip = ipField.getText().trim();
         String nick = Protocol.cleanNick(nickField.getText());
@@ -386,7 +379,6 @@ public class ChatClient extends JFrame {
         }
     }
 
-    // =====================================================  ACTIONS
     private void sendChat() {
         String t = chatInput.getText().trim();
         if (t.isEmpty() || !connected) return;
@@ -436,8 +428,7 @@ public class ChatClient extends JFrame {
         readyList.revalidate();
         readyList.repaint();
     }
-
-    // =====================================================  MAIN
+    
     public static void main(String[] args) {
         try { UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName()); } catch (Exception ignored) {}
         SwingUtilities.invokeLater(() -> new ChatClient().setVisible(true));
