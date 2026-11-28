@@ -46,7 +46,7 @@ Huddle HQ is a Java LAN chat for gaming squads who need a quick "huddle" before 
 | Name                  | GitHub                                                   | Email                      | Role             |
 | --------------------- | -------------------------------------------------------- | -------------------------- | ---------------- |
 | Ava Jane Espinosa     | [espinosaavajaneb](https://github.com/espinosaavajaneb) | espinosaavajaneb@gmail.com | Project Creator  |
-| Mark Russel Fernandez | *[github-username]*                                      | *[email address]*          | Project Operator |
+| Mark Russel Fernandez |                                     |           | Project Operator |
 
 **Course and section:** ITAS1 - BSIT 2B-SD
 
