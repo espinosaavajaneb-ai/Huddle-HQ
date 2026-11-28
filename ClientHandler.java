@@ -1,7 +1,6 @@
 import java.io.*;
 import java.net.Socket;
 
-/** Runs on its own thread on the server: talks to exactly one connected client. */
 public class ClientHandler implements Runnable {
     private final Socket socket;
     private PrintWriter out;
