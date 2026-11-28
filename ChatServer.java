@@ -4,10 +4,9 @@ import java.net.Socket;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
-/** Huddle HQ server. Run this first, then run ChatClient windows. */
 public class ChatServer {
     private static final Map<String, ClientHandler> clients = new ConcurrentHashMap<>();
-    private static final Map<String, String> votes = new ConcurrentHashMap<>();  // nick -> map
+    private static final Map<String, String> votes = new ConcurrentHashMap<>();  
     private static final Set<String> ready = ConcurrentHashMap.newKeySet();
 
     public static void main(String[] args) throws IOException {
@@ -21,7 +20,7 @@ public class ChatServer {
         }
     }
 
-    /** @return false if the nickname is already in use */
+   
     static boolean register(String nick, ClientHandler handler) {
         return clients.putIfAbsent(nick, handler) == null;
     }
@@ -46,7 +45,6 @@ public class ChatServer {
         for (ClientHandler h : clients.values()) h.send(message);
     }
 
-    /** Sends the user list, vote counts and ready list to everyone. */
     static void sendState() {
         Set<String> names = new TreeSet<>(clients.keySet());
 
