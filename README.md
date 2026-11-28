@@ -9,7 +9,7 @@
 
 Huddle HQ is a Java LAN chat for gaming squads who need a quick "huddle" before a match: one place to chat, vote on a map, and check that everyone is ready. It uses Java sockets (TCP), a Swing GUI, and in-memory state.
 
-![Huddle HQ - Ava Jane and Mark Russel chatting in the huddle](https://github.com/espinosaavajaneb-ai/Huddle-HQ/blob/8970e84c422e8362572a070b5ae4cde8eacc1d1e/4.PNG)
+![Huddle HQ - Ava Jane and Mark Russel chatting in the huddle](https://github.com/espinosaavajaneb-ai/Huddle-HQ/blob/cb7657e7df231a48461dd8e604ad948f2a0031e9/5.PNG)
 
 *Huddle HQ running on the LAN: the Chat, Map Vote, and Ready Check tabs and the squad list on the left, the live group chat on the right.*
 
