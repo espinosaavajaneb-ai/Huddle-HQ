@@ -296,35 +296,35 @@ All screenshots are stored in [`docs/`](docs).
 
 **1. Server running (NetBeans Output).** Maven builds `Huddle_HQ` (4 source files) and the server prints that it is listening on port 5001.
 
-![Server running](docs/01-server-running-netbeans.png)
+![Server running](https://github.com/espinosaavajaneb-ai/Huddle-HQ/blob/4d2f769ec422b6334790149605ae8fc4ea91636c/1.PNG)
 
 **2. Client start screen.** Status is OFFLINE. The IP (`172.20.10.2`), Port (`5001`), and Nickname (`Ava Jane`) are filled in, the Chat, Map Vote, and Ready Check tabs are visible, and the squad list is empty: **SQUAD (0)**.
 
-![Client start screen](docs/02-client-start-screen.png)
+![Client start screen](https://github.com/espinosaavajaneb-ai/Huddle-HQ/blob/4d2f769ec422b6334790149605ae8fc4ea91636c/2.PNG)
 
 **3. Connected.** Status shows ONLINE and the button changes to Disconnect. The chat shows `* Connected as Ava Jane` and the join notices for Ava Jane and Mark Russel. The squad list shows **SQUAD (2)** with "Ava Jane (you)".
 
-![Connected](docs/03-connected.png)
+![Connected](https://github.com/espinosaavajaneb-ai/Huddle-HQ/blob/4d2f769ec422b6334790149605ae8fc4ea91636c/4.PNG)
 
 **4. Group chat.** Messages from both players appear with the sender's nickname.
 
-![Group chat](docs/04-group-chat.png)
+![Group chat](https://github.com/espinosaavajaneb-ai/Huddle-HQ/blob/4d2f769ec422b6334790149605ae8fc4ea91636c/5.PNG)
 
 **5. Map Vote.** Ava Jane voted for Dust Yard, which is highlighted in amber and shows `1 vote`; the other maps show `0 votes`.
 
-![Map Vote](docs/05-map-vote.png)
+![Map Vote](https://github.com/espinosaavajaneb-ai/Huddle-HQ/blob/4d2f769ec422b6334790149605ae8fc4ea91636c/6.PNG)
 
 **6. Ready Check.** Both players are ready, the counter shows **2 / 2 ready** in green, and the button reads **CANCEL READY**.
 
-![Ready Check](docs/06-ready-check.png)
+![Ready Check](https://github.com/espinosaavajaneb-ai/Huddle-HQ/blob/4d2f769ec422b6334790149605ae8fc4ea91636c/7.PNG)
 
 **7. A member leaves.** Mark Russel disconnects: `* Mark Russel left the huddle.` appears and the squad list drops to **SQUAD (1)**. Ava Jane's client stays connected.
 
-![Member left](docs/07-member-left.png)
+![Member left](https://github.com/espinosaavajaneb-ai/Huddle-HQ/blob/4d2f769ec422b6334790149605ae8fc4ea91636c/8.PNG)
 
 **8. Disconnected.** Ava Jane clicks Disconnect: status returns to OFFLINE, the button changes back to Connect, Send is disabled, and the squad list is cleared to **SQUAD (0)**.
 
-![Disconnected](docs/08-disconnected.png)
+![Disconnected](https://github.com/espinosaavajaneb-ai/Huddle-HQ/blob/4d2f769ec422b6334790149605ae8fc4ea91636c/9.PNG)
 
 [Back to top](#table-of-contents)
 
